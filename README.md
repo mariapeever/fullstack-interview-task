@@ -47,6 +47,17 @@ We're interested in how you break down the work and build your solution in a cle
 
 On completion email a link to your repository to your contact at Moneyhub and ensure it is publicly accessible.
 
+## Answers
+
+1. How might you make this service more secure?
+The service can be made more secure via validation, sanitization/escaping, CORS policy and CSRF tokens. Validation and sanitization are required for url parameters, e.g. :id, the body of responses and user/external input. Content Security Policy (CSP, recommended) and Cross-Origin Resource Sharing (CORS) policies can be added to limit the source of requests to the admin service for other services, e.g. investments and financial-companies, as well as the response types to the admin service and all other services. Encryption (https), i.e. a valid SSL certificate, is required too for data-in-transit security.
+
+2. How would you make this solution scale to millions of records?
+Data can be paginated and requested in smaller batches. Big data could require further code refactoring and processing in non-standard ways if necessary, and performance optimisation. It could require utilization of distributed systems and databases, automation, parallelization, data compression, etc.
+
+3. What else would you have liked to improve given more time?
+The use of MVC or other models, testing, etc.
+
 ## Getting Started
 
 Please clone this service and push it to your own github (or other) public repository
