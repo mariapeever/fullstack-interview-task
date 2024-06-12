@@ -55,11 +55,11 @@ The service can be made more secure via validation, sanitization/escaping, CORS 
 
 2. How would you make this solution scale to millions of records?
 
-- Data can be paginated and requested in smaller batches. Big data could require further code refactoring and processing in non-standard ways if necessary, and performance optimisation. It could require utilization of distributed systems and databases, automation, parallelization, data compression, etc.
+Data can be paginated and requested in smaller batches. Big data could require further code refactoring and processing in non-standard ways if necessary, and performance optimisation. It could require utilization of distributed systems and databases, automation, parallelization, data compression, etc.
 
 3. What else would you have liked to improve given more time?
 
-- The use of MVC or other models, testing, etc.
+The use of MVC or other models, testing, etc.
 
 ## Getting Started
 
